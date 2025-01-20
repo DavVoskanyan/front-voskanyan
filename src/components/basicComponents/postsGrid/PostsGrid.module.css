@@ -1,0 +1,16 @@
+.postsGrid {
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin-inline: auto;
+    padding: 5rem 2rem 2rem 2rem;
+
+    display: flex;
+    gap: var(--posts-gap);
+    flex-wrap: wrap;
+}
+@media screen and (max-device-width: 425px) {
+    .postsGrid {
+        padding: 2rem;
+    }
+}

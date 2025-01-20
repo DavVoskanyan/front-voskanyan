@@ -1,0 +1,17 @@
+.inModalTitle {
+    font-family: "Roboto", monospace;
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+.inModalImage {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+.inModalText {
+    margin-top: 1rem;
+
+    font-family: "Roboto", monospace;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #969696;
+}

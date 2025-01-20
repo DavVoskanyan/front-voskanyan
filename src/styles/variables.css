@@ -1,0 +1,7 @@
+:root {
+    --posts-gap: 3rem;
+
+    --post-tag-color: rgb(235 0 40);
+    --post-title-color: rgb(0 0 0);
+    --post-text-color: rgb(146 146 146);
+}

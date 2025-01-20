@@ -1,0 +1,48 @@
+.header {
+    width: 100%;
+    height: 70px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+
+    background-color: rgb(255 255 255);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 2
+}
+.headerContent {
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin-inline: auto;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navBarOpeningButton {
+    width: auto;
+    height: auto;
+    aspect-ratio: 1;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    position: absolute;
+    left: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-device-width: 425px)  {
+    .navBarOpeningButton {
+        display: flex;
+    }
+    .hiddenLogo {
+        display: none;
+    }
+}

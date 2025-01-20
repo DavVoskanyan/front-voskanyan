@@ -1,0 +1,52 @@
+.postSocial {
+    margin-top: 2rem;
+}
+.tags {
+    color: var(--post-tag-color);
+    font-family: "Roboto", monospace;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.title {
+    margin-top: 1.5rem;
+    color: var(--post-title-color);
+    font-family: "Roboto", monospace;
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+.metaInfoLine {
+    margin-top: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+
+    color: var(--post-text-color);
+    font-family: "Roboto", monospace;
+}
+.author {
+    color: var(--post-title-color);
+    font-family: "Roboto", monospace;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.date {
+    color: var(--post-text-color);
+    font-family: "Roboto", monospace;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.views {
+    color: var(--post-text-color);
+    font-family: "Roboto", monospace;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.text {
+    margin-top: 2rem;
+    color: var(--post-text-color);
+    font-family: "Roboto", monospace;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
