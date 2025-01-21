@@ -6,6 +6,24 @@
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
+    },
+    {
+      "src": "assets/images/icons/burgerMenu.svg"
+    },
+    {
+      "src": "assets/images/icons/chevronDown.svg"
+    },
+    {
+      "src": "assets/images/icons/chevronRight.svg"
+    },
+    {
+      "src": "assets/images/icons/search.svg"
+    },
+    {
+      "src": "assets/images/icons/xMark.svg"
+    },
+    {
+      "src": "assets/images/Logo.svg"
     }
   ],
   "start_url": ".",
