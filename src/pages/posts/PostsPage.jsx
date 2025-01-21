@@ -8,11 +8,12 @@ import getPosts from "../../requests/get/getPosts";
 import SelectedPostModal from "../../components/modals/selectedPostModal/SelectedPostModal";
 
 
-const PostsPage = (props) => {
+const PostsPage = () => {
     let [posts, setPosts] = useState([]);
     let [isMenuOpen, setIsMenuOpen] = useState(false);
     let [searchBarText, setSearchBarText] = useState('');
     let [selectedPostData, setSelectedPostData] = useState(null);
+    let [scrollY, setScrollY] = useState(0);
 
     useEffect(() => {
         getPosts()
@@ -20,10 +21,14 @@ const PostsPage = (props) => {
             .then(posts => setPosts(posts));
     }, []);
 
+    useEffect(() => {
+        window.addEventListener('scroll', () => setScrollY(window.scrollY));
+    }, [])
+
     return (
         <>
-            <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} setSearchBarText={setSearchBarText}/>
-            <Nav isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
+            <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} searchBarText={searchBarText} setSearchBarText={setSearchBarText} scrollY={scrollY}/>
+            <Nav isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} scrollY={scrollY}/>
             <Main posts={posts} searchBarText={searchBarText} setSelectedPostData={setSelectedPostData}/>
             <Footer />
             <SelectedPostModal selectedPostData={selectedPostData} setSelectedPostData={setSelectedPostData}/>

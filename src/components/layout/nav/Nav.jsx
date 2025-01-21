@@ -107,7 +107,11 @@ const Nav = (props) => {
             ]
         },
     ];
-    const navClassNamesString = setMultipleClassNames(styles.nav, props.isMenuOpen ? styles.open : '');
+    const navClassNamesString = setMultipleClassNames(
+        styles.nav,
+        props.isMenuOpen ? styles.open : '',
+        props.scrollY > 200 ? styles.hide : ''
+    );
 
     return (
         <nav className={navClassNamesString}

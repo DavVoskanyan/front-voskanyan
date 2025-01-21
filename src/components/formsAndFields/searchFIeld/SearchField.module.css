@@ -30,7 +30,8 @@
 .searchInput::-webkit-search-cancel-button {
     appearance: none;
 }
-.searchInput:focus {
+.searchInput:focus,
+.searchInput.haveText {
     scale: 1;
     translate: 0 0;
     opacity: 1;
